@@ -169,7 +169,7 @@
   
   /* Navigation styles */
   .nav-link {
-    @apply flex items-center px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/20 rounded-clay transition-all duration-200 group;
+    @apply flex items-center px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/20 rounded-clay transition-all duration-200;
   }
   
   .nav-link.active {
@@ -329,3 +329,8 @@
     padding-right: env(safe-area-inset-right);
   }
 }
+
+/* Note: Tailwind forbids using certain utilities with @apply (e.g., "group"). 
+   If you need grouping behavior, add "group" as a plain class to the element in your JSX/HTML:
+   <a className="nav-link group">...</a>
+*/
