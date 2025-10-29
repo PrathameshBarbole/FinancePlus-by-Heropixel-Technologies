@@ -1,0 +1,21 @@
+{
+  "name": "financeplus",
+  "version": "1.0.0",
+  "description": "FinancePlus - Complete offline-first finance management software by Heropixel Technologies",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "init-admin": "cd backend && npm run init-admin",
+    "backup": "cd backend && npm run backup"
+  },
+  "keywords": ["finance", "banking", "offline", "react", "nodejs", "sqlite"],
+  "author": "Heropixel Technologies",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
